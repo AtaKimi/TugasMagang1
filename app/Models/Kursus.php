@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Kursus extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'judul',
+        'deskripsi',
+        'tanggal_mulai',
+        'tanggal_berakhir',
+    ];
+
+    public function materi()
+    {
+        return $this->belongsToMany(Materi::class);
+    }
+
+}
