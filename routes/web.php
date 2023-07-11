@@ -43,7 +43,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/kursus/{id}', [KursusController::class, 'destroy'])->name('kursus.destroy');
 
     Route::get('/kursus/{id}/edit-materi-relationship', [KursusController::class, 'editMateriRelationship'])->name('kursus.edit-materi-relationship');
-    Route::put('/kursus/{id}', [KursusController::class, 'updateMateriRelationship'])->name('kursus.update-materi-relationship');
+    Route::put('/kursus/{id}/materi', [KursusController::class, 'updateMateriRelationship'])->name('kursus.update-materi-relationship');
 });
 
 Route::middleware('auth')->group(function () {
@@ -56,7 +56,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/materi/{id}', [MateriController::class, 'destroy'])->name('materi.destroy');
 
     Route::get('/materi/{id}/edit-link-materi-relationship', [MateriController::class, 'editLinkMateriRelationship'])->name('materi.edit-link-materi-relationship');
-    Route::put('/materi/{id}', [MateriController::class, 'updateLinkMateriRelationship'])->name('materi.update-link-materi-relationship');
+    Route::put('/materi/{id}/link-materi', [MateriController::class, 'updateLinkMateriRelationship'])->name('materi.update-link-materi-relationship');
 });
 
 Route::middleware('auth')->group(function () {

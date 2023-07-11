@@ -29,7 +29,7 @@
         <div class="container my-3">
             <div class="flex justify-between">
                 <h2 class="text-2xl font-bold mb-4 dark:text-white">List Link Materi</h2>
-                <a href="{{route('materi.edit-link-materi-relationship', $materi->id)}}" class="inline-block px-4 py-2 my-2 bg-green-500 text-white rounded hover:bg-green-600">Edit Materi</a>
+                <a href="{{route('materi.edit-link-materi-relationship', $materi->id)}}" class="inline-block px-4 py-2 my-2 bg-green-500 text-white rounded hover:bg-green-600">Edit Link Materi</a>
             </div>
             <table class="table-auto border-collapse border border-gray-800 w-full">
                 <thead>
