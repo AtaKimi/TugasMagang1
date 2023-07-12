@@ -11,6 +11,20 @@
 
 Website Course Management adalah sebuah aplikasi web sederhana yang dirancang khusus untuk membantu seorang admin platform online course, dalam mengelola kursus dan materi. Aplikasi ini dilengkapi dengan fitur CRUD (Create, Read, Update, Delete) yang memungkinkan untuk membuat, melihat, mengedit, dan menghapus kursus serta materi dengan mudah.
 
+## User Quide
+
+- Pastikan Anda telah mempersiapkan lingkungan pengembangan yang sesuai, termasuk menginstal PHP, Laravel, dan Node.js.
+- Setelah mengunduh atau mengklon proyek aplikasi, buka terminal atau command prompt dan arahkan ke direktori proyek.
+- Jalankan perintah php artisan migrate:fresh --seed di terminal. Perintah ini akan menjalankan migrasi database dan memasukkan data awal yang diperlukan untuk aplikasi. Pastikan Anda telah mengkonfigurasi file .env dengan benar untuk koneksi database.
+- Setelah migrasi selesai, jalankan perintah php artisan serve untuk menjalankan server lokal Laravel. Anda akan melihat URL lokal yang dapat Anda akses (misalnya, http://localhost:8000).
+- Selanjutnya, jalankan perintah npm run dev untuk mengkompilasi aset JavaScript dan CSS yang diperlukan oleh aplikasi. Pastikan Anda telah menginstal dependensi Node.js dengan menjalankan perintah npm install sebelumnya.
+- Sekarang Anda dapat membuka browser web dan akses URL lokal yang ditampilkan setelah menjalankan perintah php artisan serve. Misalnya, buka http://localhost:8000 di browser.
+Di halaman utama aplikasi, Anda akan melihat opsi untuk masuk (login) atau mendaftar (register). Jika Anda belum memiliki akun, klik tautan "Register" dan ikuti langkah-langkah untuk membuat akun baru. Jika Anda ingin menggunakan akun pengguna yang telah disediakan, gunakan informasi berikut:
+Username: test@example.com
+Password: test123
+- Setelah masuk, Anda akan diarahkan ke halaman dashboard. Di sini, Anda dapat melihat informasi sederhana tentang kursus, materi, dan link materi yang ada dalam sistem.
+- Navigasi aplikasi akan memberikan akses ke fitur-fitur seperti manajemen kursus, materi, dan link materi. Anda dapat menambahkan, mengedit, atau menghapus data sesuai kebutuhan.
+
 # Fitur Aplikasi:
 
 ## Fitur Kursus:
