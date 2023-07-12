@@ -6,6 +6,8 @@ use App\Http\Controllers\MateriController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LinkMateriController;
 use App\Models\Kursus;
+use App\Models\LinkMateri;
+use App\Models\Materi;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,12 +21,10 @@ use App\Models\Kursus;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/dashboard', function () {
     $kursus = Kursus::all();
-    return view('dashboard', compact('kursus'));
+    $materi = Materi::all();
+    $link_materi = LinkMateri::all();
+    return view('dashboard', compact('kursus', 'materi', 'link_materi'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
