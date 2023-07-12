@@ -46,7 +46,8 @@ Website Course Management adalah sebuah aplikasi web sederhana yang dirancang kh
 - Mengedit informasi link materi: GET /link-materi/{id}/edit (LinkMateriController@edit)
 - Memperbarui informasi link materi: PUT /link-materi/{id} (LinkMateriController@update)
 - Menghapus link materi: DELETE /link-materi/{id} (LinkMateriController@destroy)
-- Aplikasi web ini dibangun menggunakan kombinasi teknologi dan bahasa pemrograman berikut:
+
+# Aplikasi web ini dibangun menggunakan kombinasi teknologi dan bahasa pemrograman berikut:
 
 # Arsitektur Aplikasi:
 
@@ -75,20 +76,56 @@ Aplikasi menggunakan bahasa pemrograman PHP yang disediakan oleh Laravel.
 Antarmuka Aplikasi:
 - Aplikasi Ardi Course Management menyediakan antarmuka yang responsif dan mudah digunakan untuk melakukan manajemen kursus dan materi. Pengguna yang telah terautentikasi (melalui middleware 'auth') dapat mengakses fitur-fitur aplikasi yang disediakan.
 
+## Autentikasi:
+Pengguna dapat melakukan berbagai operasi terkait dengan kursus sebagai berikut:
+
+- Registrasi Pengguna: 
+Pengguna yang belum terdaftar dapat mengakses halaman registrasi untuk membuat akun baru dengan mengisi formulir yang diperlukan.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" width="700" alt="Index Kursus"></a></p>
+
+- Login Pengguna: 
+Pengguna yang telah terdaftar dapat menggunakan fitur ini untuk melakukan login dengan memasukkan email dan password mereka.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" width="700" alt="Index Kursus"></a></p>
+
+## Dashboard:
+Halaman ini menampilkan informasi sederhana tentang seluruh data yang ada dalam sistem. Informasi yang ditampilkan termasuk jumlah kursus, jumlah materi, dan jumlah link materi. Halaman ini hanya dapat diakses oleh pengguna yang telah login dan sudah memverifikasi email mereka.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" width="700" alt="Index Kursus"></a></p>
+
 ## Manajemen Kursus:
 Pengguna dapat melakukan berbagai operasi terkait dengan kursus sebagai berikut:
 
 - Melihat Daftar Kursus:
 Pengguna dapat melihat daftar kursus yang tersedia. Setiap kursus akan ditampilkan dalam daftar yang mencakup informasi seperti judul, deskripsi, dan durasi kursus. Daftar ini membantu pengguna untuk melihat secara keseluruhan kursus yang telah dibuat.
 
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" width="700" alt="Index Kursus"></a></p>
+
+-Tampilkan Detail Kursus:
+Fitur ini memungkinkan pengguna untuk melihat detail dari suatu kursus. Pengguna dapat mengklik pada judul atau tombol yang sesuai untuk membuka halaman yang menampilkan informasi lengkap tentang kursus tersebut, termasuk judul, deskripsi, dan durasi.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.shoow.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.shoow.png" width="700" alt="Index Kursus"></a></p>
+
+-Tampilkan Halaman yang berisi untuk menghubungkan kursus dengan tabel Materi:
+Fitur ini memungkinkan pengguna untuk mengelola hubungan antara kursus dan tabel Materi. Ketika pengguna mengakses halaman ini, mereka dapat melihat daftar materi yang terhubung dengan kursus tertentu. Halaman ini biasanya menampilkan daftar materi dengan opsi untuk menambahkan, mengedit, atau menghapus materi yang terkait dengan kursus.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.edit-materi-relationship.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.edit-materi-relationship.png" width="700" alt="Index Kursus"></a></p>
+
 - Membuat Kursus Baru:
 Pengguna dapat membuat kursus baru dengan mengisi informasi yang diperlukan, seperti judul kursus, deskripsi, dan durasi kursus. Dalam antarmuka, pengguna akan melihat formulir yang memungkinkan mereka untuk memasukkan informasi kursus yang baru.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.create.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.create.png" width="700" alt="Create Kursus"></a></p>
 
 - Mengedit Kursus:
 Pengguna dapat mengedit informasi kursus yang sudah ada. Dalam antarmuka, pengguna akan melihat formulir yang sudah terisi dengan informasi kursus yang ada dan mereka dapat memperbarui informasi tersebut, seperti judul kursus, deskripsi, dan durasi kursus.
 
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.edit.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.edit.png" width="700" alt="Create Kursus"></a></p>
+
 - Menghapus Kursus:
-Pengguna dapat menghapus kursus yang tidak relevan atau sudah tidak diperlukan. Dalam antarmuka, pengguna akan melihat tombol hapus di samping setiap kursus dalam daftar. Jika pengguna mengklik tombol hapus, kursus tersebut akan dihapus dari sistem.
+Pengguna dapat menghapus kursus yang tidak relevan atau sudah tidak diperlukan. Dalam antarmuka, pengguna akan melihat tombol hapus di samping judul kursus yang ada pada halaman detail. Jika pengguna mengklik tombol hapus, kursus tersebut akan dihapus dari sistem.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.shoow.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.shoow.png" width="700" alt="Create Kursus"></a></p>
 
 ## Manajemen Materi:
 Pengguna dapat melakukan berbagai operasi terkait dengan materi sebagai berikut:
@@ -96,28 +133,57 @@ Pengguna dapat melakukan berbagai operasi terkait dengan materi sebagai berikut:
 - Melihat Daftar Materi:
 Pengguna dapat melihat daftar materi yang telah ditambahkan ke dalam kursus. Setiap materi akan ditampilkan dalam daftar yang mencakup informasi seperti judul, deskripsi, dan link/embed materi. Daftar ini membantu pengguna untuk melihat dan mengakses materi-materi yang ada.
 
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Materi.index.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Materi.index.png" width="700" alt="Create Kursus"></a></p>
+
+- Tampilkan Detail Materi:
+Fitur ini memungkinkan pengguna untuk melihat detail dari suatu materi. Pengguna dapat mengklik pada judul atau tombol yang sesuai untuk membuka halaman yang menampilkan informasi lengkap tentang materi tersebut, seperti judul, deskripsi, dan link/embed materi.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Materi.show.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Materi.show.png" width="700" alt="Create Kursus"></a></p>
+
+- Tampilkan Halaman yang berisi untuk menghubungkan kursus dengan tabel Link Materi:
+Fitur ini memungkinkan pengguna untuk mengelola hubungan antara kursus dan tabel Link Materi. Ketika pengguna mengakses halaman ini, mereka dapat melihat daftar link materi yang terhubung dengan kursus tertentu. Halaman ini menampilkan daftar link materi dengan opsi untuk menambahkan, mengedit, atau menghapus link materi yang terkait dengan kursus.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Materi.edit-link-materi-relationship.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Materi.edit-link-materi-relationship.png" width="700" alt="Create Kursus"></a></p>
+
 - Membuat Materi Baru:
-Pengguna dapat membuat materi baru dengan mengisi informasi yang diperlukan, seperti judul materi, deskripsi, dan link/embed materi. Dalam antarmuka, pengguna akan melihat formulir yang memungkinkan mereka untuk memasukkan informasi materi yang baru.
+Pengguna dapat membuat materi baru dengan mengisi informasi yang diperlukan, seperti judul materi dan deskripsi. Dalam antarmuka, pengguna akan melihat formulir yang memungkinkan mereka untuk memasukkan informasi materi yang baru.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Materi.create.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Materi.create.png" width="700" alt="Create Kursus"></a></p>
 
 - Mengedit Materi:
-Pengguna dapat mengedit informasi materi yang sudah ada. Dalam antarmuka, pengguna akan melihat formulir yang sudah terisi dengan informasi materi yang ada dan mereka dapat memperbarui informasi tersebut, seperti judul materi, deskripsi, dan link/embed materi.
+Pengguna dapat mengedit informasi materi yang sudah ada. Dalam antarmuka, pengguna akan melihat formulir yang sudah terisi dengan informasi materi yang ada dan mereka dapat memperbarui informasi tersebut, seperti judul materi, deskripsi.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Materi.edit.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Materi.edit.png" width="700" alt="Create Kursus"></a></p>
 
 - Menghapus Materi:
-Pengguna dapat menghapus materi yang tidak relevan dalam sebuah kursus. Dalam antarmuka, pengguna akan melihat tombol hapus di samping setiap materi dalam daftar. Jika pengguna mengklik tombol hapus, materi tersebut akan dihapus dari sistem.
+Pengguna dapat menghapus materi yang tidak relevan dalam sebuah kursus. Dalam antarmuka, pengguna akan melihat tombol hapus di samping judul materi. Jika pengguna mengklik tombol hapus, materi tersebut akan dihapus dari sistem.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.shoow.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.shoow.png" width="700" alt="Create Kursus"></a></p>
 
 ## Manajemen Link Materi:
 Pengguna dapat melakukan berbagai operasi terkait dengan link materi sebagai berikut:
 
 - Melihat Daftar Link Materi:
-Pengguna dapat melihat daftar link materi yang telah ditambahkan. Setiap link materi akan ditampilkan dalam daftar yang mencakup informasi seperti judul, deskripsi, dan link. Daftar ini membantu pengguna untuk melihat dan mengakses link materi yang ada.
+Pengguna dapat melihat daftar link materi yang telah ditambahkan. Setiap link materi akan ditampilkan dalam daftar yang mencakup informasi seperti judul dan link. Daftar ini membantu pengguna untuk melihat dan mengakses link materi yang ada.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Link-materi.index.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Link-materi.index.png" width="700" alt="Create Kursus"></a></p>
 
 - Membuat Link Materi Baru:
-Pengguna dapat membuat link materi baru dengan mengisi informasi yang diperlukan, seperti judul link materi, deskripsi, dan link. Dalam antarmuka, pengguna akan melihat formulir yang memungkinkan mereka untuk memasukkan informasi link materi yang baru.
+Pengguna dapat membuat link materi baru dengan mengisi informasi yang diperlukan, seperti judul link materi dan link. Dalam antarmuka, pengguna akan melihat formulir yang memungkinkan mereka untuk memasukkan informasi link materi yang baru.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Link-materi.create.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Link-materi.create.png" width="700" alt="Create Kursus"></a></p>
+
+Tampilkan Halaman Detail Link Materi:
+Fitur ini memungkinkan pengguna untuk melihat detail dari suatu link materi. Pengguna dapat mengklik pada judul atau tombol yang sesuai untuk membuka halaman yang menampilkan informasi lengkap tentang link materi tersebut, seperti judul, dan link.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Link-materi.show.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Link-materi.show.png" width="700" alt="Create Kursus"></a></p>
 
 - Mengedit Link Materi:
 Pengguna dapat mengedit informasi link materi yang sudah ada. Dalam antarmuka, pengguna akan melihat formulir yang sudah terisi dengan informasi link materi yang ada dan mereka dapat memperbarui informasi tersebut, seperti judul link materi, deskripsi, dan link.
 
-- Menghapus Link Materi:
-Pengguna dapat menghapus link materi yang tidak relevan. Dalam antarmuka, pengguna akan melihat tombol hapus di samping setiap link materi dalam daftar. Jika pengguna mengklik tombol hapus, link materi tersebut akan dihapus dari sistem.
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Link-materi.edit.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Link-materi.edit.png" width="700" alt="Create Kursus"></a></p>
 
-Seluruh fitur tersebut diimplementasikan melalui serangkaian rute yang ditentukan dalam kode yang diberikan. Setiap rute memiliki penanganan yang sesuai dalam kontroler yang terkait (KursusController, MateriController, LinkMateriController).
+- Menghapus Link Materi:
+Pengguna dapat menghapus link materi yang tidak relevan. Dalam antarmuka, pengguna akan melihat tombol hapus di samping judul link materi. Jika pengguna mengklik tombol hapus, link materi tersebut akan dihapus dari sistem.
+
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Link-materi.show.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Link-materi.show.png" width="700" alt="Create Kursus"></a></p>
