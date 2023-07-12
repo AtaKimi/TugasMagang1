@@ -82,17 +82,17 @@ Pengguna dapat melakukan berbagai operasi terkait dengan kursus sebagai berikut:
 - Registrasi Pengguna: 
 Pengguna yang belum terdaftar dapat mengakses halaman registrasi untuk membuat akun baru dengan mengisi formulir yang diperlukan.
 
-<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" width="700" alt="Index Kursus"></a></p>
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/register.png" width="700" alt="Index Kursus"></a></p>
 
 - Login Pengguna: 
 Pengguna yang telah terdaftar dapat menggunakan fitur ini untuk melakukan login dengan memasukkan email dan password mereka.
 
-<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" width="700" alt="Index Kursus"></a></p>
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Login.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Login.png" width="700" alt="Index Kursus"></a></p>
 
 ## Dashboard:
 Halaman ini menampilkan informasi sederhana tentang seluruh data yang ada dalam sistem. Informasi yang ditampilkan termasuk jumlah kursus, jumlah materi, dan jumlah link materi. Halaman ini hanya dapat diakses oleh pengguna yang telah login dan sudah memverifikasi email mereka.
 
-<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.index.png" width="700" alt="Index Kursus"></a></p>
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Dashboard.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Dashboard.png" width="700" alt="Index Kursus"></a></p>
 
 ## Manajemen Kursus:
 Pengguna dapat melakukan berbagai operasi terkait dengan kursus sebagai berikut:
@@ -105,7 +105,7 @@ Pengguna dapat melihat daftar kursus yang tersedia. Setiap kursus akan ditampilk
 -Tampilkan Detail Kursus:
 Fitur ini memungkinkan pengguna untuk melihat detail dari suatu kursus. Pengguna dapat mengklik pada judul atau tombol yang sesuai untuk membuka halaman yang menampilkan informasi lengkap tentang kursus tersebut, termasuk judul, deskripsi, dan durasi.
 
-<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.shoow.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.shoow.png" width="700" alt="Index Kursus"></a></p>
+<p align="center"><a href="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.show.png" target="_blank"><img src="https://github.com/AtaKimi/TugasMagang1/blob/main/screenshots/Kursus.show.png" width="700" alt="Index Kursus"></a></p>
 
 -Tampilkan Halaman yang berisi untuk menghubungkan kursus dengan tabel Materi:
 Fitur ini memungkinkan pengguna untuk mengelola hubungan antara kursus dan tabel Materi. Ketika pengguna mengakses halaman ini, mereka dapat melihat daftar materi yang terhubung dengan kursus tertentu. Halaman ini biasanya menampilkan daftar materi dengan opsi untuk menambahkan, mengedit, atau menghapus materi yang terkait dengan kursus.
