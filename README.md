@@ -11,7 +11,7 @@
 
 Website Course Management adalah sebuah aplikasi web sederhana yang dirancang khusus untuk membantu seorang admin platform online course, dalam mengelola kursus dan materi. Aplikasi ini dilengkapi dengan fitur CRUD (Create, Read, Update, Delete) yang memungkinkan untuk membuat, melihat, mengedit, dan menghapus kursus serta materi dengan mudah.
 
-## User Quide
+## User Guide
 
 - Pastikan Anda telah mempersiapkan lingkungan pengembangan yang sesuai, termasuk menginstal PHP, Laravel, dan Node.js.
 - Setelah mengunduh atau mengklon proyek aplikasi, buka terminal atau command prompt dan arahkan ke direktori proyek.
