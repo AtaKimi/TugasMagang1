@@ -19,7 +19,7 @@ use App\Models\Materi;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+//route ini digunakan untuk menampilkan dashboard yang berisi data sederhana tentang seluruh data yang ada dialam sistem
 Route::get('/', function () {
     $kursus = Kursus::all();
     $materi = Materi::all();
