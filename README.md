@@ -13,19 +13,16 @@ Website Course Management adalah sebuah aplikasi web sederhana yang dirancang kh
 
 ## User Guide
 
-Berikut ini adalah user guide yang telah diperbarui dengan perintah yang Anda berikan:
-
-User Guide:
-
-- Pastikan Anda telah mempersiapkan lingkungan pengembangan yang sesuai, termasuk menginstal PHP, Laravel, dan Node.js.
+- Pastikan Anda telah mempersiapkan lingkungan pengembangan yang sesuai, termasuk menginstal PHP, Composer dan Node.js.
 - Setelah mengunduh atau mengklon proyek aplikasi, buka terminal atau command prompt dan arahkan ke direktori proyek.
-- Jalankan perintah composer install di terminal untuk menginstal dependensi PHP yang diperlukan oleh proyek.
-- Selanjutnya, jalankan perintah php artisan migrate --seed di terminal. Perintah ini akan menjalankan migrasi database dan memasukkan data awal yang diperlukan untuk aplikasi. Pastikan Anda telah mengkonfigurasi file .env dengan benar untuk koneksi database.
-- Setelah migrasi selesai, jalankan perintah php artisan key:generate di terminal untuk menghasilkan kunci aplikasi yang unik.
-- Jalankan perintah npm install di terminal untuk menginstal dependensi Node.js yang diperlukan oleh proyek.
-- Selanjutnya, jalankan perintah npm run dev di terminal untuk mengkompilasi aset JavaScript dan CSS yang diperlukan oleh aplikasi.
-- Sekarang Anda dapat menjalankan server lokal Laravel dengan perintah php artisan serve. Anda akan melihat URL lokal yang dapat Anda akses (misalnya, http://localhost:8000).
-- Buka browser web dan akses URL lokal yang ditampilkan setelah menjalankan perintah php artisan serve. Misalnya, buka http://localhost:8000 di browser.
+- Jalankan perintah 'composer install' di terminal untuk menginstal dependensi PHP yang diperlukan oleh proyek.
+- Buka file '.env' pada proyek Anda dan temukan baris yang mengatur koneksi database. Biasanya baris ini memiliki format 'DB_CONNECTION=mysql'. Ganti mysql dengan sqlite agar koneksi database menggunakan SQLite.
+- Selanjutnya, jalankan perintah 'php artisan migrate --seed' di terminal. Perintah ini akan menjalankan migrasi database dan memasukkan data awal yang diperlukan untuk aplikasi. Pastikan Anda telah mengkonfigurasi file '.env' dengan benar untuk koneksi database.
+- Setelah migrasi selesai, jalankan perintah 'php artisan key:generate' di terminal untuk menghasilkan kunci aplikasi yang unik.
+- Jalankan perintah 'npm install' di terminal untuk menginstal dependensi Node.js yang diperlukan oleh proyek.
+- Selanjutnya, jalankan perintah 'npm run dev' di terminal untuk mengkompilasi aset JavaScript dan CSS yang diperlukan oleh aplikasi.
+- Sekarang Anda dapat menjalankan server lokal Laravel dengan perintah 'php artisan serve'. Anda akan melihat URL lokal yang dapat Anda akses (misalnya, http://localhost:8000).
+- Buka browser web dan akses URL lokal yang ditampilkan setelah menjalankan perintah php artisan serve. Misalnya, buka 'http://localhost:8000' di browser.
 - Di halaman utama aplikasi, Anda akan melihat opsi untuk masuk (login) atau mendaftar (register). Jika Anda belum memiliki akun, klik tautan "Register" dan ikuti langkah-langkah untuk membuat akun baru. Jika Anda ingin menggunakan akun pengguna yang telah disediakan, gunakan informasi berikut:
 Username: test@example.com
 Password: test123
